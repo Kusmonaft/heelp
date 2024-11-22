@@ -10,5 +10,12 @@ int main()
 	
 	human::display();
 
+
+
+
+
+
+
+
 	return 0;
 }
