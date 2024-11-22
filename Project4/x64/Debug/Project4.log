@@ -1,6 +1,9 @@
 ﻿  Apartment.cpp
-  Source.cpp
   home.cpp
   human.cpp
+  Source.cpp
+C:\Users\User\source\repos\Project4\Source.cpp(11,9): error C2352: "human::display": для вызова нестатической функции-члена требуется объект
+  C:\Users\User\source\repos\Project4\human.h(35,7):
+   см. объявление "human::display"
+  
   Создание кода...
-  Project4.vcxproj -> C:\Users\User\source\repos\Project4\x64\Debug\Project4.exe

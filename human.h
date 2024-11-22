@@ -3,7 +3,6 @@
 #include <conio.h>
 #include <stdio.h>
 #include <io.h>
-#define SIZE 10
 
 using namespace std;
 
@@ -13,9 +12,9 @@ private:
 	char* name;
 	int age;
 public:
-	human() { name = nullptr; }
+	human() { name = nullptr; age = 0; }
 	
-	human(const char n[SIZE], int a = 0)
+	human(const char n[], int a = 0)
 	{
 		name = new char[strlen(n) + 1];
 		strcpy_s(name, strlen(n) + 1, n);
@@ -33,7 +32,7 @@ public:
 		delete[] name;
 	}
 
-	void display()
+	void display() const
 	{
 		cout << "Имя: " << name << "\nВозраст: " << age << '\n';
 	}
